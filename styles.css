@@ -6,7 +6,6 @@
 
 body {
   background-color: #dbdbdb;
-
 }
 
 header {
@@ -38,6 +37,7 @@ logo-link:hover .logo-header {
 .text-header {
   text-align: center;
 }
+
 
 .text-header h4 {
   font-size: 23px;
