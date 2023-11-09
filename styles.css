@@ -168,33 +168,51 @@ main .heading h4 {
 }
 
 main hr {
-  border-width: 10px;
+  border-width: 5px;
 }
 
-
-.courses {
-  margin: 10px 100px;
+.courses-container .undergraduate, .graduate  {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  width: 50%;
+  margin: 0 auto;
 }
 
-.courses h1{
-  margin: 1rem 2.5rem;
-  color: maroon;
-  font-size: 2.5rem
+.courses-container h1 {
+  margin-top: 20px;
+  font-size: 2rem;
+  text-align: center;
+  grid-column: 1 / span 2;
+}
+
+.undergraduate {
+  display: grid;
+  text-align: center;
+}
+
+.graduate {
+  text-align: center;
+}
+
+.courses h1 {
+  text-align: center;
 }
 
 .course-box {
-  padding: 20px 0px 20px 20px;
+  padding: 20px 10px 20px 10px;
   background-image: linear-gradient(to right,rgb(255, 245, 46)30%, rgb(227, 171, 0));
-  width: 450px;
+  width: 50%;
   border-radius: 10px;
-  margin: 20px 30px;
+  margin: 20px auto;
+  display: inlin;
 }
 
 .course-box h2 {
   position: relative;
   left: 0;
   top: 0;
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
 
 .course-box button {
@@ -210,14 +228,6 @@ main hr {
 .course-box button a {
   color: #fff;
   text-decoration: none;
-}
-
-.courses-container {
-  margin: 0 20px;
-  position: relative;
-  display: flex;
-  justify-content: space-around;
-  background-color: white;
 }
 
 footer {
